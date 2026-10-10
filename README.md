@@ -22,5 +22,3 @@ Tasks 2.0 — полностью готовая к работе версия.
 Установка:
 • macOS (Apple Silicon и Intel): Tasks-2.0.0-mac.dmg
 • Windows 10/11 (64-bit): Tasks-2.0.0-windows-setup.exe
-Сборка без платной подписи — как открыть при первом запуске,
-описано в УСТАНОВКА.txt.
