@@ -2,7 +2,7 @@
 
 # Tasks
 
-**A calm desktop workspace for small studios and freelancers —<br>tasks, clients and money in one window.**
+**A calm desktop workspace for business and freelancers —<br>tasks, clients and money in one window.**
 
 Free · macOS & Windows · English / Українська / Русский
 
