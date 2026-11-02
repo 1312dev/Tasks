@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" width="1280" height="760" role="img" aria-label="Tasks — animated preview">
+<title>Tasks — tasks, clients and finances for small studios</title>
+<defs>
+  <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#19A6E0"/><stop offset="1" stop-color="#A04ED0"/></linearGradient>
+  <linearGradient id="accSoft" x1="0" x2="1"><stop offset="0" stop-color="#19A6E0" stop-opacity=".22"/><stop offset="1" stop-color="#A04ED0" stop-opacity=".08"/></linearGradient>
+  <linearGradient id="areaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#19A6E0" stop-opacity=".35"/><stop offset="1" stop-color="#19A6E0" stop-opacity="0"/></linearGradient>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
+  <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000" flood-opacity=".55"/></filter>
+</defs>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  @keyframes win {0.00% { opacity: 0; transform: translateY(18px) scale(.985) } 5.83% { opacity: 1; transform: none } 95.00% { opacity: 1; transform: none } 99.17% { opacity: 0; transform: translateY(-8px) } 100.00% { opacity: 0 }}
+.win { animation: win 12.0s linear infinite; transform-box: view-box; transform-origin: 640px 380px; }
+@keyframes card0 {0.00% { opacity: 0; transform: translateY(10px) } 5.00% { opacity: 0; transform: translateY(10px) } 8.33% { opacity: 1; transform: none } 100.00% { opacity: 1; transform: none }}
+.card0 { animation: card0 12.0s linear infinite;  }
+@keyframes card1 {0.00% { opacity: 0; transform: translateY(10px) } 6.25% { opacity: 0; transform: translateY(10px) } 9.58% { opacity: 1; transform: none } 100.00% { opacity: 1; transform: none }}
+.card1 { animation: card1 12.0s linear infinite;  }
+@keyframes card2 {0.00% { opacity: 0; transform: translateY(10px) } 7.50% { opacity: 0; transform: translateY(10px) } 10.83% { opacity: 1; transform: none } 100.00% { opacity: 1; transform: none }}
+.card2 { animation: card2 12.0s linear infinite;  }
+@keyframes card3 {0.00% { opacity: 0; transform: translateY(10px) } 8.75% { opacity: 0; transform: translateY(10px) } 12.08% { opacity: 1; transform: none } 100.00% { opacity: 1; transform: none }}
+.card3 { animation: card3 12.0s linear infinite;  }
+@keyframes donut {0.00% { stroke-dashoffset: 750 } 12.50% { stroke-dashoffset: 750 } 24.17% { stroke-dashoffset: 0 } 100.00% { stroke-dashoffset: 0 }}
+.donut { animation: donut 12.0s linear infinite; stroke-dasharray: 750 1000; }
+@keyframes spark1 {0.00% { stroke-dashoffset: 1000 } 10.00% { stroke-dashoffset: 1000 } 18.33% { stroke-dashoffset: 0 } 100.00% { stroke-dashoffset: 0 }}
+.spark1 { animation: spark1 12.0s linear infinite; stroke-dasharray: 1000; }
+@keyframes spark2 {0.00% { stroke-dashoffset: 1000 } 11.25% { stroke-dashoffset: 1000 } 19.58% { stroke-dashoffset: 0 } 100.00% { stroke-dashoffset: 0 }}
+.spark2 { animation: spark2 12.0s linear infinite; stroke-dasharray: 1000; }
+@keyframes chartA {0.00% { stroke-dashoffset: 1000 } 11.67% { stroke-dashoffset: 1000 } 26.67% { stroke-dashoffset: 0 } 100.00% { stroke-dashoffset: 0 }}
+.chartA { animation: chartA 12.0s linear infinite; stroke-dasharray: 1000; }
+@keyframes chartB {0.00% { stroke-dashoffset: 1000 } 13.33% { stroke-dashoffset: 1000 } 28.33% { stroke-dashoffset: 0 } 100.00% { stroke-dashoffset: 0 }}
+.chartB { animation: chartB 12.0s linear infinite; stroke-dasharray: 1000; }
+@keyframes area {0.00% { opacity: 0 } 21.67% { opacity: 0 } 28.33% { opacity: 1 } 100.00% { opacity: 1 }}
+.area { animation: area 12.0s linear infinite;  }
+@keyframes row0 {0.00% { opacity: 0; transform: translateX(-14px) } 15.00% { opacity: 0; transform: translateX(-14px) } 18.75% { opacity: 1; transform: none } 100.00% { opacity: 1; transform: none }}
+.row0 { animation: row0 12.0s linear infinite;  }
+@keyframes row1 {0.00% { opacity: 0; transform: translateX(-14px) } 16.67% { opacity: 0; transform: translateX(-14px) } 20.42% { opacity: 1; transform: none } 100.00% { opacity: 1; transform: none }}
+.row1 { animation: row1 12.0s linear infinite;  }
+@keyframes payA {0.00% { opacity: 0 } 5.00% { opacity: 1 } 31.25% { opacity: 1 } 33.33% { opacity: 0 } 100.00% { opacity: 0 }}
+@keyframes payB {0.00% { opacity: 0 } 31.25% { opacity: 0 } 33.33% { opacity: 1 } 95.00% { opacity: 1 } 99.17% { opacity: 0 } 100.00% { opacity: 0 }}
+.payA { animation: payA 12.0s linear infinite;  }
+.payB { animation: payB 12.0s linear infinite;  }
+@keyframes incA {0.00% { opacity: 0 } 5.00% { opacity: 1 } 35.00% { opacity: 1 } 37.08% { opacity: 0 } 100.00% { opacity: 0 }}
+@keyframes incB {0.00% { opacity: 0 } 35.00% { opacity: 0 } 37.08% { opacity: 1 } 95.00% { opacity: 1 } 99.17% { opacity: 0 } 100.00% { opacity: 0 }}
+.incA { animation: incA 12.0s linear infinite;  }
+.incB { animation: incB 12.0s linear infinite;  }
+@keyframes flashG {0.00% { opacity: 0 } 31.25% { opacity: 0 } 32.50% { opacity: .9 } 41.67% { opacity: 0 } 100.00% { opacity: 0 }}
+.flashG { animation: flashG 12.0s linear infinite;  }
+@keyframes glowInc {0.00% { opacity: 0 } 34.58% { opacity: 0 } 36.25% { opacity: 1 } 46.67% { opacity: 0 } 100.00% { opacity: 0 }}
+.glowInc { animation: glowInc 12.0s linear infinite;  }
+@keyframes clbar {0.00% { width: 28px } 41.25% { width: 28px } 43.75% { width: 42px } 100.00% { width: 42px }}
+.clbar { animation: clbar 12.0s linear infinite;  }
+@keyframes clA {0.00% { opacity: 0 } 5.00% { opacity: 1 } 41.67% { opacity: 1 } 43.75% { opacity: 0 } 100.00% { opacity: 0 }}
+@keyframes clB {0.00% { opacity: 0 } 41.67% { opacity: 0 } 43.75% { opacity: 1 } 95.00% { opacity: 1 } 99.17% { opacity: 0 } 100.00% { opacity: 0 }}
+.clA { animation: clA 12.0s linear infinite;  }
+.clB { animation: clB 12.0s linear infinite;  }
+@keyframes stA {0.00% { opacity: 0 } 5.00% { opacity: 1 } 45.42% { opacity: 1 } 47.50% { opacity: 0 } 100.00% { opacity: 0 }}
+@keyframes stB {0.00% { opacity: 0 } 45.42% { opacity: 0 } 47.50% { opacity: 1 } 95.00% { opacity: 1 } 99.17% { opacity: 0 } 100.00% { opacity: 0 }}
+.stA { animation: stA 12.0s linear infinite;  }
+.stB { animation: stB 12.0s linear infinite;  }
+@keyframes doneDim {0.00% { opacity: 1 } 46.67% { opacity: 1 } 49.17% { opacity: .55 } 95.00% { opacity: .55 } 100.00% { opacity: 1 }}
+.doneDim { animation: doneDim 12.0s linear infinite;  }
+@keyframes row2 {0.00% { opacity: 0; transform: translateY(-10px) } 54.58% { opacity: 0; transform: translateY(-10px) } 57.92% { opacity: 1; transform: none } 95.00% { opacity: 1; transform: none } 99.17% { opacity: 0 } 100.00% { opacity: 0 }}
+.row2 { animation: row2 12.0s linear infinite;  }
+@keyframes newGlow {0.00% { opacity: 0 } 55.00% { opacity: 0 } 57.50% { opacity: 1 } 68.33% { opacity: 0 } 100.00% { opacity: 0 }}
+.newGlow { animation: newGlow 12.0s linear infinite;  }
+@keyframes cntA {0.00% { opacity: 0 } 5.00% { opacity: 1 } 55.83% { opacity: 1 } 57.92% { opacity: 0 } 100.00% { opacity: 0 }}
+@keyframes cntB {0.00% { opacity: 0 } 55.83% { opacity: 0 } 57.92% { opacity: 1 } 95.00% { opacity: 1 } 99.17% { opacity: 0 } 100.00% { opacity: 0 }}
+.cntA { animation: cntA 12.0s linear infinite;  }
+.cntB { animation: cntB 12.0s linear infinite;  }
+@keyframes tg {0.00% { opacity: 0; transform: translateX(40px) } 66.67% { opacity: 0; transform: translateX(40px) } 70.83% { opacity: 1; transform: none } 93.33% { opacity: 1; transform: none } 97.50% { opacity: 0; transform: translateX(20px) } 100.00% { opacity: 0 }}
+.tg { animation: tg 12.0s linear infinite;  }
+@keyframes tgLines {0.00% { opacity: 0 } 71.67% { opacity: 0 } 75.00% { opacity: 1 } 93.33% { opacity: 1 } 97.50% { opacity: 0 } 100.00% { opacity: 0 }}
+.tgLines { animation: tgLines 12.0s linear infinite;  }
+@keyframes cur {0.00% { transform: translate(1150px, 700px) } 21.67% { transform: translate(1150px, 700px) } 29.58% { transform: translate(1004px, 590px) } 35.83% { transform: translate(1004px, 590px) } 40.00% { transform: translate(820px, 634px) } 41.67% { transform: translate(820px, 634px) } 44.17% { transform: translate(380px, 634px) } 47.50% { transform: translate(380px, 634px) } 52.92% { transform: translate(1158px, 553px) } 57.50% { transform: translate(1158px, 553px) } 64.17% { transform: translate(1110px, 470px) } 100.00% { transform: translate(1110px, 470px) }}
+.cur { animation: cur 12.0s linear infinite;  }
+@keyframes curVis {0.00% { opacity: 0 } 20.00% { opacity: 0 } 22.50% { opacity: 1 } 65.83% { opacity: 1 } 69.17% { opacity: 0 } 100.00% { opacity: 0 }}
+.curVis { animation: curVis 12.0s linear infinite;  }
+@keyframes rp1 {0.00% { opacity: 0; transform: scale(.15) } 30.83% { opacity: 0; transform: scale(.15) } 31.00% { opacity: .95; transform: scale(.2) } 35.42% { opacity: 0; transform: scale(1) } 100.00% { opacity: 0; transform: scale(1) }}
+.rp1 { animation: rp1 12.0s linear infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes rp2 {0.00% { opacity: 0; transform: scale(.15) } 41.25% { opacity: 0; transform: scale(.15) } 41.42% { opacity: .95; transform: scale(.2) } 45.83% { opacity: 0; transform: scale(1) } 100.00% { opacity: 0; transform: scale(1) }}
+.rp2 { animation: rp2 12.0s linear infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes rp3 {0.00% { opacity: 0; transform: scale(.15) } 45.42% { opacity: 0; transform: scale(.15) } 45.58% { opacity: .95; transform: scale(.2) } 50.00% { opacity: 0; transform: scale(1) } 100.00% { opacity: 0; transform: scale(1) }}
+.rp3 { animation: rp3 12.0s linear infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes rp4 {0.00% { opacity: 0; transform: scale(.15) } 54.17% { opacity: 0; transform: scale(.15) } 54.33% { opacity: .95; transform: scale(.2) } 58.75% { opacity: 0; transform: scale(1) } 100.00% { opacity: 0; transform: scale(1) }}
+.rp4 { animation: rp4 12.0s linear infinite; transform-box: fill-box; transform-origin: center; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect width="1280" height="760" fill="#06070B"/>
+<circle cx="180" cy="80" r="220" fill="#08AAED" opacity=".28" filter="url(#blur)"/>
+<circle cx="1120" cy="680" r="240" fill="#8074BE" opacity=".26" filter="url(#blur)"/>
+<circle cx="760" cy="40" r="160" fill="#D34A9C" opacity=".14" filter="url(#blur)"/>
+
+<g class="win">
+  <rect x="60" y="50" width="1160" height="664" rx="20" fill="#0B0C10" stroke="#262935" filter="url(#shadow)"/>
+  <rect x="72" y="62" width="220" height="640" rx="15" fill="#101218" stroke="#1C1F28"/>
+  <circle cx="94" cy="84" r="6" fill="#FF5F57"/><circle cx="114" cy="84" r="6" fill="#FEBC2E"/><circle cx="134" cy="84" r="6" fill="#28C840"/>
+  <text x="94" y="128" font-size="27" font-weight="800" fill="#F4F6FB" letter-spacing="-1">Tasks</text>
+  <text x="95" y="146" font-size="11" font-weight="600" fill="#6F7586">Nove Interiors</text>
+  <rect x="84" y="166" width="196" height="34" rx="10" fill="url(#accSoft)"/><rect x="92" y="172" width="22" height="22" rx="7" fill="url(#acc)"/><text x="124" y="187" font-size="13" font-weight="700" fill="#F4F6FB">Home</text><rect x="92" y="209" width="22" height="22" rx="7" fill="#1A1C24"/><text x="124" y="224" font-size="13" font-weight="600" fill="#A3A9BB">All tasks</text><rect x="250" y="211" width="20" height="16" rx="8" fill="#1F2230"/><text x="260" y="223" font-size="10" font-weight="700" fill="#8A90A2" text-anchor="middle">9</text><rect x="92" y="246" width="22" height="22" rx="7" fill="#1A1C24"/><text x="124" y="261" font-size="13" font-weight="600" fill="#A3A9BB">Archive</text><rect x="92" y="283" width="22" height="22" rx="7" fill="#1A1C24"/><text x="124" y="298" font-size="13" font-weight="600" fill="#A3A9BB">Reports</text><text x="96" y="336" font-size="10.5" font-weight="700" fill="#5E6475" letter-spacing=".06em">FINANCE</text><rect x="92" y="346" width="22" height="22" rx="7" fill="#1A1C24"/><text x="124" y="361" font-size="13" font-weight="600" fill="#A3A9BB">Expenses</text><rect x="92" y="383" width="22" height="22" rx="7" fill="#1A1C24"/><text x="124" y="398" font-size="13" font-weight="600" fill="#A3A9BB">Budget</text><text x="96" y="436" font-size="10.5" font-weight="700" fill="#5E6475" letter-spacing=".06em">CLIENTS</text><rect x="92" y="446" width="22" height="22" rx="7" fill="#1A1C24"/><text x="124" y="461" font-size="13" font-weight="600" fill="#A3A9BB">Companies</text><rect x="250" y="448" width="20" height="16" rx="8" fill="#1F2230"/><text x="260" y="460" font-size="10" font-weight="700" fill="#8A90A2" text-anchor="middle">5</text><rect x="92" y="483" width="22" height="22" rx="7" fill="#1A1C24"/><text x="124" y="498" font-size="13" font-weight="600" fill="#A3A9BB">Contacts</text><rect x="250" y="485" width="20" height="16" rx="8" fill="#1F2230"/><text x="260" y="497" font-size="10" font-weight="700" fill="#8A90A2" text-anchor="middle">6</text>
+  <text x="94" y="688" font-size="10.5" fill="#5E6475">Developed by <tspan font-weight="700" fill="#A3A9BB">1312 Wrap Design</tspan></text>
+
+  <text x="316" y="110" font-size="29" font-weight="800" fill="#F4F6FB" letter-spacing="-.6">Good evening</text>
+  <text x="317" y="134" font-size="13" fill="#8A90A2">Friday, October 30</text>
+  <rect x="980" y="86" width="220" height="38" rx="19" fill="#12141B" stroke="#232633"/>
+  <text x="1000" y="110" font-size="13" font-weight="700" fill="#F4F6FB"><tspan fill="#19A6E0">$</tspan> 45.37 ₴    <tspan fill="#19A6E0">€</tspan> 50.68 ₴    <tspan fill="#19A6E0">zł</tspan> 11.92 ₴</text>
+
+  <g class="card0"><rect x="316" y="160" width="212" height="118" rx="16" fill="#12141B" stroke="#20232D"/>
+      <rect x="332" y="176" width="30" height="30" rx="9" fill="url(#acc)"/>
+      <text x="332" y="228" font-size="12" font-weight="600" fill="#9AA0B2">Open tasks</text><text class="cntA" x="332" y="262" font-size="28" font-weight="800" fill="#F4F6FB">9</text><text class="cntB" x="332" y="262" font-size="28" font-weight="800" fill="#F4F6FB">10</text><text x="372" y="261" font-size="11" fill="#7D8396">In progress 3 · To do 6</text></g>
+  <g class="card1"><rect x="540" y="160" width="212" height="118" rx="16" fill="#12141B" stroke="#20232D"/>
+      <rect x="556" y="176" width="30" height="30" rx="9" fill="#173B2A"/>
+      <text x="556" y="228" font-size="12" font-weight="600" fill="#9AA0B2">Income this month</text><rect class="glowInc" x="540" y="160" width="212" height="118" rx="16" fill="none" stroke="#3DDC84" stroke-width="2"/><text class="incA" x="556" y="258" font-size="26" font-weight="800" fill="#F4F6FB">61.8k ₴</text><text class="incB" x="556" y="258" font-size="26" font-weight="800" fill="#F4F6FB">71.3k ₴</text><path class="spark1" d="M556 272 C 590 262, 610 270, 640 264 S 690 258, 736 254" fill="none" stroke="#3DDC84" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g class="card2"><rect x="764" y="160" width="212" height="118" rx="16" fill="#12141B" stroke="#20232D"/>
+      <rect x="780" y="176" width="30" height="30" rx="9" fill="#3A2A12"/>
+      <text x="780" y="228" font-size="12" font-weight="600" fill="#9AA0B2">Expenses this month</text><text x="780" y="258" font-size="26" font-weight="800" fill="#F4F6FB">29.3k ₴</text><path class="spark2" d="M780 268 C 810 268, 830 262, 860 266 S 920 256, 960 270" fill="none" stroke="#FF5A6E" stroke-width="2.4" stroke-linecap="round"/></g>
+  <g class="card3"><rect x="988" y="160" width="212" height="118" rx="16" fill="#12141B" stroke="#20232D"/>
+      <rect x="1004" y="176" width="30" height="30" rx="9" fill="#3A1820"/>
+      <text x="1004" y="228" font-size="12" font-weight="600" fill="#9AA0B2">Overdue</text><text x="1004" y="262" font-size="28" font-weight="800" fill="#FF5A6E">1</text></g>
+
+  <g class="card1"><rect x="316" y="294" width="560" height="224" rx="16" fill="#12141B" stroke="#20232D"/>
+    <text x="336" y="324" font-size="14" font-weight="700" fill="#F4F6FB">Budget · last 6 months</text>
+    <text x="640" y="324" font-size="11" fill="#8A90A2"><tspan fill="#19A6E0">●</tspan> Hryvnia   <tspan fill="#F59E0B">●</tspan> other currencies in ₴</text>
+    <g stroke="#1E212B"><path d="M340 360H852M340 410H852M340 460H852M340 500H852"/></g>
+    <path class="area" d="M340 470 C 400 466, 440 476, 500 482 S 600 486, 660 478 S 760 472, 852 404 L852 500 L340 500Z" fill="url(#areaG)"/>
+    <path class="chartA" d="M340 470 C 400 466, 440 476, 500 482 S 600 486, 660 478 S 760 472, 852 404" fill="none" stroke="#19A6E0" stroke-width="3" stroke-linecap="round"/>
+    <path class="chartB" d="M340 490 C 420 478, 470 452, 540 420 S 640 400, 700 404 S 790 384, 852 382" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+    <text x="340" y="512" font-size="10" fill="#5E6475">May          Jun          Jul          Aug          Sep          Oct</text>
+  </g>
+  <g class="card2"><rect x="892" y="294" width="308" height="224" rx="16" fill="#12141B" stroke="#20232D"/>
+    <text x="912" y="324" font-size="14" font-weight="700" fill="#F4F6FB">Efficiency</text>
+    <circle cx="980" cy="420" r="52" fill="none" stroke="#1E212B" stroke-width="12"/>
+    <circle class="donut" cx="980" cy="420" r="52" fill="none" stroke="url(#acc)" stroke-width="12" stroke-linecap="round" transform="rotate(-90 980 420)" pathLength="1000"/>
+    <text x="980" y="426" font-size="20" font-weight="800" fill="#F4F6FB" text-anchor="middle">75%</text>
+    <text x="1052" y="402" font-size="12" fill="#A3A9BB"><tspan fill="#19A6E0">●</tspan> Done · 6</text>
+    <text x="1052" y="424" font-size="12" fill="#A3A9BB"><tspan fill="#F59E0B">●</tspan> In progress · 3</text>
+    <text x="1052" y="446" font-size="12" fill="#A3A9BB"><tspan fill="#FF5A6E">●</tspan> Overdue · 1</text>
+  </g>
+
+  <g class="card3"><rect x="316" y="534" width="884" height="168" rx="16" fill="#12141B" stroke="#20232D"/>
+    <text x="336" y="560" font-size="14" font-weight="700" fill="#F4F6FB">All tasks</text>
+    <rect x="1118" y="542" width="68" height="24" rx="8" fill="url(#acc)"/><text x="1152" y="558" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">+ Add</text>
+    <g class="row0">
+      <rect x="332" y="574" width="852" height="34" rx="10" fill="#171922" stroke="#22252F"/><rect x="332" y="580" width="3" height="22" rx="1.5" fill="#FF5A6E"/>
+      <rect x="344" y="580" width="62" height="22" rx="11" fill="#232633"/><circle cx="355" cy="591" r="3" fill="#A3A9BB"/><text x="363" y="595" font-size="11" font-weight="700" fill="#A3A9BB">To do</text>
+      <text x="418" y="595" font-size="12.5" font-weight="700" fill="#F4F6FB">Revise the kitchen floor plan</text><text x="620" y="595" font-size="11" font-weight="700" fill="#19A6E0">Apartments</text>
+      <text x="900" y="595" font-size="12" font-weight="700" fill="#C9CDD8">9,500 ₴</text>
+      <rect class="flashG" x="962" y="576" width="84" height="30" rx="15" fill="#3DDC84" opacity="0"/>
+      <g class="payA"><rect x="966" y="580" width="74" height="22" rx="11" fill="rgba(255,176,32,.12)" stroke="#8A6514" stroke-dasharray="3 2"/><circle cx="977" cy="591" r="3" fill="#FFB020"/><text x="985" y="595" font-size="11" font-weight="700" fill="#FFB020">Unpaid</text></g>
+      <g class="payB"><rect x="966" y="580" width="64" height="22" rx="11" fill="rgba(61,220,132,.14)"/><circle cx="977" cy="591" r="3" fill="#3DDC84"/><text x="985" y="595" font-size="11" font-weight="700" fill="#3DDC84">Paid</text></g>
+      <text x="1110" y="595" font-size="11.5" font-weight="700" fill="#FF5A6E">Oct 28</text>
+    </g>
+    <g class="row1"><g class="doneDim">
+      <rect x="332" y="618" width="852" height="34" rx="10" fill="#171922" stroke="#22252F"/><rect x="332" y="624" width="3" height="22" rx="1.5" fill="#FF5A6E"/>
+      <g class="stA"><rect x="344" y="624" width="88" height="22" rx="11" fill="rgba(255,165,61,.13)"/><circle cx="355" cy="635" r="3" fill="#FFA53D"/><text x="363" y="639" font-size="11" font-weight="700" fill="#FFA53D">In progress</text></g>
+      <g class="stB"><rect x="344" y="624" width="60" height="22" rx="11" fill="rgba(61,220,132,.14)"/><circle cx="355" cy="635" r="3" fill="#3DDC84"/><text x="363" y="639" font-size="11" font-weight="700" fill="#3DDC84">Done</text></g>
+      <text x="444" y="639" font-size="12.5" font-weight="700" fill="#F4F6FB">Moodboard for the bar area</text><text x="632" y="639" font-size="11" font-weight="700" fill="#E0457B">Restaurants</text>
+      <rect x="790" y="624" width="90" height="22" rx="11" fill="#1B1E28" stroke="#2A2E3A"/>
+      <text class="clA" x="804" y="639" font-size="11" font-weight="700" fill="#C9CDD8">2/3</text><text class="clB" x="804" y="639" font-size="11" font-weight="700" fill="#3DDC84">3/3</text>
+      <rect x="828" y="633" width="42" height="4" rx="2" fill="#2A2E3A"/><rect class="clbar" x="828" y="633" height="4" rx="2" fill="url(#acc)"/>
+      <text x="900" y="639" font-size="12" font-weight="700" fill="#3DDC84">14,000 ₴</text>
+      <rect x="966" y="624" width="64" height="22" rx="11" fill="rgba(61,220,132,.14)"/><circle cx="977" cy="635" r="3" fill="#3DDC84"/><text x="985" y="639" font-size="11" font-weight="700" fill="#3DDC84">Paid</text>
+      <text x="1110" y="639" font-size="11.5" font-weight="700" fill="#8A90A2">Oct 31</text>
+    </g></g>
+    <g class="row2">
+      <rect x="332" y="662" width="852" height="34" rx="10" fill="#171922" stroke="#22252F"/>
+      <rect class="newGlow" x="331" y="661" width="854" height="36" rx="11" fill="none" stroke="#19A6E0" stroke-width="2"/>
+      <rect x="332" y="668" width="3" height="22" rx="1.5" fill="#FF5A6E"/>
+      <rect x="344" y="668" width="62" height="22" rx="11" fill="#232633"/><circle cx="355" cy="679" r="3" fill="#A3A9BB"/><text x="363" y="683" font-size="11" font-weight="700" fill="#A3A9BB">To do</text>
+      <text x="418" y="683" font-size="12.5" font-weight="700" fill="#F4F6FB">Showroom lighting concept</text><text x="606" y="683" font-size="11" font-weight="700" fill="#8B74FF">Commercial</text>
+      <rect x="790" y="668" width="90" height="22" rx="11" fill="#1B1E28" stroke="#2A2E3A"/><text x="804" y="683" font-size="11" font-weight="700" fill="#C9CDD8">0/2</text>
+      <text x="900" y="683" font-size="12" font-weight="700" fill="#C9CDD8">18,000 ₴</text>
+      <rect x="966" y="668" width="74" height="22" rx="11" fill="rgba(255,176,32,.12)" stroke="#8A6514" stroke-dasharray="3 2"/><circle cx="977" cy="679" r="3" fill="#FFB020"/><text x="985" y="683" font-size="11" font-weight="700" fill="#FFB020">Unpaid</text>
+      <text x="1110" y="683" font-size="11.5" font-weight="700" fill="#8A90A2">Nov 1</text>
+    </g>
+  </g>
+</g>
+
+<g class="tg">
+  <rect x="900" y="300" width="330" height="236" rx="18" fill="#0E1621" stroke="#24303C" filter="url(#shadow)"/>
+  <rect x="900" y="300" width="330" height="54" rx="18" fill="#17212B"/><rect x="900" y="336" width="330" height="18" fill="#17212B"/>
+  <circle cx="928" cy="327" r="15" fill="url(#acc)"/><text x="928" y="332" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">T</text>
+  <text x="952" y="323" font-size="13" font-weight="700" fill="#E9EEF4">Studio reports</text><text x="952" y="339" font-size="10.5" fill="#6C7883">bot · Telegram</text>
+  <g class="tgLines">
+    <rect x="914" y="366" width="302" height="156" rx="14" fill="#182533"/>
+    <text x="928" y="390" font-size="12.5" font-weight="700" fill="#E9EEF4">📋 Today's tasks</text>
+    <text x="928" y="410" font-size="11" fill="#AEB9C6">Open: 10 · Overdue: 1 · Due today: 1</text>
+    <text x="928" y="436" font-size="11" font-weight="700" fill="#FF8A99">⚠ Overdue (1)</text>
+    <text x="928" y="454" font-size="11" fill="#E9EEF4">Revise the kitchen floor plan · 9,500 ₴</text>
+    <text x="928" y="480" font-size="11" font-weight="700" fill="#E9EEF4">📌 Today (1)</text>
+    <text x="928" y="498" font-size="11" fill="#E9EEF4">Order tile and stone samples · Vera</text>
+    <text x="1204" y="514" font-size="9.5" fill="#6C7883" text-anchor="end">10:00</text>
+  </g>
+</g>
+
+<g class="curVis">
+  <circle class="rp1" cx="1004" cy="590" r="24" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle class="rp2" cx="820" cy="634" r="24" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle class="rp3" cx="380" cy="634" r="24" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <circle class="rp4" cx="1158" cy="553" r="24" fill="none" stroke="#fff" stroke-width="2.5"/>
+  <g class="cur"><path d="M0 0 L0 20 L5 15.5 L8.6 23.6 L12.2 22 L8.7 14 L15.6 14 Z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></g>
+</g>
+</svg>
