@@ -1,139 +1,181 @@
+<div align="center">
+
 # Tasks
 
-Десктоп-приложение для задач, проектов, клиентов и финансов (macOS и Windows).
-Данные хранятся на вашем компьютере или на вашем личном сервере — без регистрации
-и без сторонних облаков.
+**A calm desktop workspace for small studios and freelancers —<br>tasks, clients and money in one window.**
 
-Developed by **1312 Wrap Design** · Telegram [@wrap1312design](https://t.me/wrap1312design) ·
-Instagram [@1312.wrap.design](https://www.instagram.com/1312.wrap.design/) ·
-Behance [@wrapdesign1](https://www.behance.net/wrapdesign1) ·
-YouTube [@1312wrapdesign](https://www.youtube.com/@1312wrapdesign) ·
-GitHub [1312dev](https://github.com/1312dev) · [1312dev.github.io](https://1312dev.github.io/)
+Free · macOS & Windows · English / Українська / Русский
 
-## Возможности
+[![Latest release](https://img.shields.io/github/v/release/1312dev/Tasks?label=release&color=19A6E0)](https://github.com/1312dev/Tasks/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/1312dev/Tasks/total?color=A04ED0)](https://github.com/1312dev/Tasks/releases)
 
-- Задачи с проектами, компаниями, исполнителями, сроками, приоритетами и чеклистами.
-- «Мои проекты»: персонал (фото, роль, контакты, Telegram, проекты) и проекты
-  (аватар, цвет, компания, команда, свой чат в Telegram).
-- Компании с логотипом, контактами и представителями — представители сразу
-  попадают в «Контакты». Аватарки у сотрудников, проектов, компаний и контактов.
-- Оплата задач в один клик: «Не оплачено → Оплачено → Без оплаты».
-- Расходы по категориям, бюджет с категориями поступлений. Переключатель «Доход»
-  у категории решает, попадают ли её поступления в доход на главной, в отчёты
-  и уведомления.
-- Отчёт за любой период в TXT или сразу в Telegram: задачи, компании и контакты
-  (только те, с кем велась работа), расходы и бюджет с итогами по валютам.
-- Уведомления в Telegram: несколько чатов (поиск чатов, где есть бот), личные
-  сообщения сотрудникам (ID находится по /start), новая задача — сразу исполнителю
-  и в чат проекта; задачи на сегодня (общие и лично каждому), отчёт за неделю
-  и за месяц. Отправка с компьютера или через свой сервер (версия 3).
-- Хранение на своём сервере: данные шифруются ключом (AES-256-GCM)
-  и синхронизируются между компьютерами — Mac и Windows в любом сочетании.
-- Языки: ENG / UKR / RU (интерфейс, отчёты и сообщения в Telegram).
-- Темы: тёмная (по умолчанию), светлая, «Как в системе»; 9 цветов акцента.
-- Валюты: основная и до трёх дополнительных из 16 популярных в Европе; курсы ЕЦБ и НБУ.
+[**⬇ Download**](https://github.com/1312dev/Tasks/releases/latest) · [What's inside](#whats-inside) · [Install](#install) · [Українською](#українською)
 
-## Установка
+<br>
 
-Готовые установщики — в разделе Releases этого репозитория:
-`Tasks-<версия>-mac.dmg` (Apple Silicon + Intel) и `Tasks-<версия>-windows-setup.exe`.
-Как открыть приложение без платной подписи — в [УСТАНОВКА.txt](УСТАНОВКА.txt).
+<img src="media/preview.svg" alt="Tasks — animated preview: a task gets paid, a checklist is closed, a new task appears and the Telegram digest arrives" width="100%">
 
-Подробное руководство пользователя (RU / UK / EN) — в папке [guides](guides).
+</div>
 
-## Где хранятся данные
+<br>
 
-| Система | Путь |
-|---------|------|
-| macOS   | `~/Library/Application Support/Tasks/Data/data.json` |
-| Windows | `%APPDATA%\Tasks\Data\data.json` |
+## Why Tasks
 
-Резервные копии — в `Data/backups` (раз в день, перед импортом, очисткой
-и загрузкой с сервера; хранятся последние 30).
+Most task managers want an account, a subscription and your data in somebody else's cloud.
+Tasks doesn't. It's a desktop app that keeps the whole studio in one window — what needs doing,
+who does it, for which client, and whether the money has arrived. Your data stays on your
+computer, or on your own server if you want several devices. No sign-up, no ads, no fees.
 
-## Свой сервер
+## What's inside
 
-Папка [server](server) — `server.js` на Node.js 18+ без зависимостей. Сервер хранит
-зашифрованные данные и рассылает уведомления в Telegram. Установка и настройка —
-в [server/README.txt](server/README.txt) и в руководстве пользователя
-(раздел «Свой сервер»).
+**Work**
+- **Tasks with checklists** — project, company, assignee, priority, deadline and amount.
+  One click moves a task forward; a task can't be closed until every checklist step is done.
+- **My projects: people and projects** — people cards with a photo, role, contacts, Telegram and their projects;
+  projects with an avatar, colour, client company, team and their own Telegram chat.
+- **Companies and contacts** — a logo, contact details and representatives; every representative is a contact too.
+  Each company shows its tasks, progress and what it still owes.
+- **Archive** — finished work, searchable by period, project and payment.
 
-## Разработка
+**Money**
+- **Payments in one click** — Unpaid → Paid → No payment. Income is counted on the day the money arrives.
+- **Expenses by category** and **budget top-ups** from any source, with income categories you control.
+- **One balance across currencies** — a main currency plus up to three extra ones, chosen from
+  16 currencies popular in Europe. Rates come from the ECB and the National Bank of Ukraine and refresh daily.
 
-Нужен Node.js 22 LTS или новее.
+**Overview**
+- **Home** — open and overdue tasks, this month's income and expenses, what's up next, a six-month budget chart.
+- **Reports** for any period — by project and by company, saved as TXT or sent to Telegram.
+- **Telegram for the whole team** — several chats, and private messages to people: a new task goes straight
+  to the assignee and to the project chat. Today's tasks every morning (to the team and to each person),
+  weekly and monthly reports — from your computer or from your own server.
 
-```bash
-npm install
-npm start
-```
+**Yours**
+- **Data on your computer** — automatic daily backups, export and import in one file.
+- **Your own server (optional)** — a single Node.js file. Data is encrypted with your key (AES-256-GCM)
+  before it leaves the app, and stays in sync between Macs and Windows PCs.
+- **Dark, light or system theme**, nine accent colours, three languages.
+- **Updates from GitHub** — a new release shows up right on the Home screen with an *Update* button.
 
-`npm start` работает с той же папкой данных, что и установленное приложение.
+## Install
 
-Демо-страница с вымышленными данными (открывается в браузере без установки):
+Download the latest version from **[Releases](https://github.com/1312dev/Tasks/releases/latest)**.
 
-```bash
-npm run preview
-```
+| System | File |
+|---|---|
+| macOS 13+ (Apple Silicon & Intel) | `Tasks-x.x.x-mac.dmg` |
+| Windows 10 / 11 (64-bit) | `Tasks-x.x.x-windows-setup.exe` |
 
-Результат — `preview/Tasks-preview.html`. Параметры адреса:
-`?lang=ru|uk|en&theme=light|dark|auto&accent=aurora|blue|lime|...`
+The builds are free and not code-signed, so the system asks once on first launch:
 
-Иконка приложения — `build/icon.svg`. После замены:
+- **macOS** — open the `.dmg` and drag Tasks into *Applications*. On first launch macOS says it can't verify
+  the app: click *Done*, then *System Settings → Privacy & Security → Open Anyway*.
+  If there's no such button, run in Terminal: `xattr -dr com.apple.quarantine /Applications/Tasks.app`
+- **Windows** — run the installer. If *Windows protected your PC* appears: *More info → Run anyway*.
 
-```bash
-npm run icons
-```
+Updating: install the new version over the old one — data and settings stay. From 2.0 on, Tasks offers
+the update itself.
 
-## Сборка установщиков
+A step-by-step user guide in English, Ukrainian and Russian comes with the app:
+*Settings → Info → Open guide*.
 
-```bash
-npm run dist:mac
-npm run dist:win
-```
+## Privacy
 
-Файлы появятся в `dist/`. Сборка без платной подписи (macOS подписан ad-hoc).
-Не меняйте `productName` и `build.appId` в `package.json` — иначе приложение начнёт
-искать данные в другой папке.
+Tasks has no accounts and no analytics. It goes online only to fetch exchange rates (ECB and NBU),
+check GitHub for updates, send to Telegram (if you turn it on) and talk to your own server (if you set one up).
 
-## Обновления через GitHub Releases
+## Developer
 
-Приложение проверяет последний релиз репозитория, указанного в `package.json`:
+Designed and developed by **1312 Wrap Design** — questions, ideas and bug reports are welcome.
 
-```json
-"tasks": { "updateRepo": "1312dev/Tasks" }
-```
+[Telegram](https://t.me/wrap1312design) · [Instagram](https://www.instagram.com/1312.wrap.design/) ·
+[Behance](https://www.behance.net/wrapdesign1) · [YouTube](https://www.youtube.com/@1312wrapdesign) ·
+[GitHub](https://github.com/1312dev) · [Website](https://1312dev.github.io/)
 
-Если репозиторий называется иначе — поменяйте это значение до сборки.
-Репозиторий должен быть публичным. Выпуск новой версии:
+<br>
 
-1. Поменяйте `version` в `package.json`, например на `2.2.1`.
-2. Соберите установщики: `npm run dist:mac` и `npm run dist:win`.
-3. Создайте релиз с тегом `v2.2.1` и приложите `.dmg` и `.exe` из `dist/`.
+---
 
-## Баннер из GitHub
+<br>
 
-Баннер в «Настройки → Информация» лежит в программе (`renderer/banner`, версия в `banner.json`).
-Программа проверяет `banner/banner.json` в открытом репозитории `1312dev/Tasks` (ветка `main`)
-при запуске и раз в 6 часов. Если там версия больше, вся папка `banner/` скачивается в папку
-данных (`Banner/current`) и показывается вместо встроенной — в том числе без интернета.
-Чтобы сменить баннер, поправьте файлы в `banner/` репозитория и увеличьте номер версии.
+## Українською
 
-## Структура проекта
+**Спокійний робочий простір для невеликих студій і фрилансерів — завдання, клієнти й гроші в одному вікні.**
+Безкоштовно · macOS і Windows · English / Українська / Русский
 
-```
-main.js            главный процесс: данные, синхронизация с сервером, курсы ЕЦБ и НБУ,
-                   Telegram, планировщик, обновления
-reports.js         отчёты и уведомления (TXT и Telegram)
-preload.js         мост между главным процессом и интерфейсом
-renderer/          интерфейс: index.html, app.js, i18n.js (ENG / UKR / RU),
-                   шрифт логотипа (Outfit, SIL OFL), иконка,
-                   banner/ — баннер студии в Настройки → Информация
-                   (новая версия скачивается из GitHub, см. выше)
-guides/            руководство пользователя (RU / UK / EN)
-server/            свой сервер (данные и уведомления)
-preview/           сборка демо-страницы
-scripts/           генерация иконок
-build/             исходник иконки и иконки для установщиков
-```
+[**⬇ Завантажити**](https://github.com/1312dev/Tasks/releases/latest)
 
-© 2026 1312 Wrap Design
+### Навіщо Tasks
+
+Більшість менеджерів завдань хочуть акаунт, підписку й ваші дані в чужій хмарі. Tasks — ні.
+Це програма для компʼютера, у якій уся студія в одному вікні: що треба зробити, хто робить,
+для якого клієнта і чи прийшли вже гроші. Дані зберігаються на вашому компʼютері або на вашому
+власному сервері, якщо пристроїв кілька. Без реєстрації, реклами й оплати.
+
+### Що всередині
+
+**Робота**
+- **Завдання з чеклістами** — проєкт, компанія, виконавець, пріоритет, дедлайн і сума.
+  Один клік рухає завдання далі, а закрити його можна лише після всіх пунктів чекліста.
+- **Мої проєкти: персонал і проєкти** — картки співробітників із фото, роллю, контактами, Telegram і їхніми проєктами;
+  проєкти з аватаром, кольором, компанією-клієнтом, командою й власним чатом у Telegram.
+- **Компанії та контакти** — логотип, дані для звʼязку й представники; кожен представник — це й контакт.
+  У кожної компанії її завдання, прогрес і скільки вона ще винна.
+- **Архів** — виконана робота з пошуком за періодом, проєктом і оплатою.
+
+**Гроші**
+- **Оплата в один клік** — Не оплачено → Оплачено → Без оплати. Дохід рахується в день, коли надійшли гроші.
+- **Витрати за категоріями** і **поповнення бюджету** з будь-яких джерел, з категоріями доходу, які ви налаштовуєте самі.
+- **Один баланс у кількох валютах** — основна валюта й до трьох додаткових із 16 популярних у Європі.
+  Курси ЄЦБ і Національного банку України, оновлюються щодня.
+
+**Огляд**
+- **Головна** — завдання в роботі й прострочені, дохід і витрати за місяць, найближчі завдання, графік бюджету за пів року.
+- **Звіти** за будь-який період — за проєктами й компаніями, у TXT або одразу в Telegram.
+- **Telegram для всієї команди** — кілька чатів і особисті повідомлення: нове завдання одразу приходить
+  виконавцю й у чат проєкту. Завдання на сьогодні щоранку (команді й кожному особисто), звіти за тиждень
+  і місяць — з вашого компʼютера або з власного сервера.
+
+**Ваше**
+- **Дані на вашому компʼютері** — щоденні резервні копії, експорт та імпорт одним файлом.
+- **Власний сервер (за бажанням)** — один файл на Node.js. Дані шифруються вашим ключем (AES-256-GCM)
+  ще до того, як залишать програму, і синхронізуються між Mac і Windows.
+- **Темна, світла або системна тема**, девʼять кольорів акценту, три мови.
+- **Оновлення з GitHub** — новий реліз зʼявляється просто на головній із кнопкою «Оновити».
+
+### Встановлення
+
+Завантажте останню версію в **[Releases](https://github.com/1312dev/Tasks/releases/latest)**:
+`Tasks-x.x.x-mac.dmg` для macOS 13+ (Apple Silicon та Intel) або `Tasks-x.x.x-windows-setup.exe`
+для Windows 10 / 11 (64-bit).
+
+Збірки безкоштовні й без платного підпису, тому під час першого запуску система перепитає:
+
+- **macOS** — відкрийте `.dmg` і перетягніть Tasks у «Програми». Під час першого запуску натисніть «Готово»,
+  потім «Системні параметри → Приватність і безпека → Усе одно відкрити». Якщо кнопки немає —
+  у Терміналі: `xattr -dr com.apple.quarantine /Applications/Tasks.app`
+- **Windows** — запустіть інсталятор. Якщо зʼявиться «Windows захистила ваш компʼютер» —
+  «Докладніше → Усе одно запустити».
+
+Оновлення: встановіть нову версію поверх старої — дані й налаштування збережуться.
+Починаючи з 2.0, Tasks сам пропонує оновлення.
+
+Покроковий посібник англійською, українською та російською — у програмі:
+«Налаштування → Інформація → Відкрити посібник».
+
+### Приватність
+
+У Tasks немає акаунтів і аналітики. В інтернет програма звертається лише по курси валют (ЄЦБ і НБУ),
+перевірку оновлень на GitHub, надсилання в Telegram (якщо ввімкнено) та обмін із вашим сервером (якщо налаштовано).
+
+### Розробник
+
+Дизайн і розробка — **1312 Wrap Design**. Пишіть з питаннями, ідеями й знайденими помилками.
+
+[Telegram](https://t.me/wrap1312design) · [Instagram](https://www.instagram.com/1312.wrap.design/) ·
+[Behance](https://www.behance.net/wrapdesign1) · [YouTube](https://www.youtube.com/@1312wrapdesign) ·
+[GitHub](https://github.com/1312dev) · [Website](https://1312dev.github.io/)
+
+<br>
+
+<div align="center"><sub>© 2026 1312 Wrap Design · Tasks is free to use</sub></div>
