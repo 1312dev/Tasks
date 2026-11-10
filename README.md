@@ -46,8 +46,8 @@ computer, or on your own server if you want several devices. No sign-up, no ads,
 **Overview**
 - **Home** — open and overdue tasks, this month's income and expenses, what's up next, a six-month budget chart.
 - **Reports** for any period — by project and by company, saved as TXT or sent to Telegram.
-- **Telegram for the whole team** — several chats, and private messages to people: a new task goes straight
-  to the assignee and to the project chat. Today's tasks every morning (to the team and to each person),
+- **Telegram for the whole team** — several chats, and private messages to people: a new task goes to the
+  assignee, to the project chat or both — your choice. Every message is signed “Tasks · your workspace”. Today's tasks every morning (to the team and to each person),
   weekly and monthly reports — from your computer or from your own server.
 
 **Yours**
@@ -132,8 +132,8 @@ Designed and developed by **1312 Wrap Design** — questions, ideas and bug repo
 **Огляд**
 - **Головна** — завдання в роботі й прострочені, дохід і витрати за місяць, найближчі завдання, графік бюджету за пів року.
 - **Звіти** за будь-який період — за проєктами й компаніями, у TXT або одразу в Telegram.
-- **Telegram для всієї команди** — кілька чатів і особисті повідомлення: нове завдання одразу приходить
-  виконавцю й у чат проєкту. Завдання на сьогодні щоранку (команді й кожному особисто), звіти за тиждень
+- **Telegram для всієї команди** — кілька чатів і особисті повідомлення: нове завдання приходить виконавцю,
+  у чат проєкту або туди й туди — на ваш вибір. Кожне повідомлення підписане «Tasks · ваш кабінет». Завдання на сьогодні щоранку (команді й кожному особисто), звіти за тиждень
   і місяць — з вашого компʼютера або з власного сервера.
 
 **Ваше**
